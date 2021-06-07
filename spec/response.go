@@ -1,4 +1,4 @@
-package response
+package spec
 
 type Response struct {
 	Code    int

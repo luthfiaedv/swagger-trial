@@ -15,7 +15,7 @@ func main() {
 }
 
 func helloWorld(c echo.Context) error {
-	return c.JSON(http.StatusOK, response.Response{
+	return c.JSON(http.StatusOK, spec.Response{
 		Code:    200,
 		Message: "Hello World",
 	})
