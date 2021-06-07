@@ -1,19 +1,11 @@
-package main
+package handler
 
 import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	spec "github.com/luthfiaedv/swagger-trial/spec"
+	"github.com/luthfiaedv/swagger-trial/spec"
 )
-
-func main() {
-	e := echo.New()
-
-	e.GET("/", helloWorld)
-
-	e.Logger.Fatal(e.Start(":8080"))
-}
 
 func helloWorld(c echo.Context) error {
 	return c.JSON(http.StatusOK, spec.Response{
