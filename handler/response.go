@@ -7,7 +7,7 @@ import (
 	"github.com/luthfiaedv/swagger-trial/spec"
 )
 
-func helloWorld(c echo.Context) error {
+func HelloWorld(c echo.Context) error {
 	return c.JSON(http.StatusOK, spec.Response{
 		Code:    200,
 		Message: "Hello World",
